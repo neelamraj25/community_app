@@ -32,12 +32,11 @@ class CommunityView extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.notifications_none, color: Colors.white),
               onPressed: () {
-                // Handle notification tap
               },
             ),
             CircleAvatar(
               radius: 18,
-              backgroundImage: AssetImage('assets/icon/app_icon.png'), // Replace with your profile picture path
+              backgroundImage: AssetImage('assets/icon/app_icon.png'), 
             ),
             SizedBox(width: 8),
           ],
@@ -119,7 +118,7 @@ class CommunityView extends StatelessWidget {
                                   padding: const EdgeInsets.only(top: 8.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8),
-                                    child: Image.network(post.image!.first.img!, fit: BoxFit.cover, width: double.infinity), // Display only the first image
+                                    child: Image.network(post.image!.first.img!, fit: BoxFit.cover, width: double.infinity), 
                                   ),
                                 ),
                               if (post.video != null && post.video!.isNotEmpty)
@@ -172,7 +171,7 @@ class CommunityView extends StatelessWidget {
                                   IconButton(
                                     icon: Icon(Icons.thumb_up_alt_outlined),
                                     onPressed: () {
-                                      // Handle like button tap
+                                     
                                     },
                                   ),
                                   Text(post.likeCount?.toString() ?? '0'),
@@ -183,7 +182,7 @@ class CommunityView extends StatelessWidget {
                                   IconButton(
                                     icon: Icon(Icons.comment_bank_outlined),
                                     onPressed: () {
-                                      // Handle comment button tap
+                                     
                                     },
                                   ),
                                   Text(post.commentCount?.toString() ?? '0'),
@@ -192,7 +191,7 @@ class CommunityView extends StatelessWidget {
                               IconButton(
                                 icon: Icon(Icons.share),
                                 onPressed: () {
-                                  // Handle share button tap
+                                 
                                 },
                               ),
                             ],
